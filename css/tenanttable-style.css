@@ -1,0 +1,97 @@
+.styled-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    font-family: sans-serif;
+    min-width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.styled-table thead tr {
+    background-color: #47768F;
+    color: #ffffff;
+    text-align: center;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.styled-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+    border-bottom: 2px solid #47768F;
+}
+a
+{
+    text-decoration: none;
+}
+
+.dropbtn {
+    background-color: #47768F;
+    color: white;
+    padding: 10px;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+  }
+
+/*DropDown Action*/
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    overflow: hidden;
+  }
+  ul:hover {
+    overflow: visible;
+  }
+  li {
+    position: relative;
+    background-color: #17B0FF;
+  }
+  li:hover {
+    background-color: #189BDF;
+  }
+  li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  /*shadow*/
+  ul ul {
+    max-height: 0;
+    transition: max-height 1s;
+  }
+  ul li:hover ul {
+    max-height: 999px;
+  }
+  ul li {
+    float: none;
+    background-color: #47768F;
+  }
+
+  /*second*/
+  ul ul {
+    position: absolute;
+    width: 0;
+    top: 0;
+    left: 100%;
+    width: 100%;
+  }
+  ul ul li {
+    background-color: #49555c;
+  }

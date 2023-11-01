@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Dormitory System | Home</title>
+<meta charset="UTF-8" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+         integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="css/styles.css" />
+<!--[if IE 6]><link rel="stylesheet" type="text/css" href="styles/ie6.css" /><![endif]-->
+
+<style>
+  * {box-sizing: border-box}
+  body {font-family: Verdana, sans-serif; margin:0}
+  .mySlides {display: none}
+  img {vertical-align: middle;}
+  
+  /* Slideshow container */
+  .slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 99999s;
+  }
+  
+  @keyframes fade {
+    from {opacity: 5} 
+    to {opacity: 5}
+  }
+  
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+  }
+  
+  .nav-link{
+  padding-inline: 1rem; 
+  }
+  
+  #border {
+    border: thick solid black;
+  }
+  #border1 {
+    border: thick solid black;
+  }
+  #border2 {
+    border: thick solid black;
+  }
+  #border3 {
+    border: thick solid black;
+  }
+  #border4 {
+    border: thick solid black;
+  }
+  #border5 {
+    border: thick solid black;
+  }
+  #border6 {
+  border: thick solid black;
+  }
+  
+  </style>
+
+</head>
+<body>
+<div id="page">
+  <div id="header">
+    <div id="section">
+      <div><a href="index.html"><img src="images/logo.png" alt="" /></a></div>
+      <span><img src="images/perp.png" style="width:100px;height:130px;position:absolute;right:650px;bottom:495px;"/> </span> </div>
+    <ul>
+      <li class="current"><a href="index.html">Home</a></li>
+      <li><a href="homepage/room.html">Rooms</a></li>
+      <li><a href="homepage/booking.php">Book Now!</a></li>
+      <li><a href="homepage/floor.html">Floor Plan</a></li>
+      <li><a href="student/index.php">Student</a></li>
+      <li><a href="admin/dtr_panel/index.php">Admin</a></li>
+    </ul>
+    <div id="tagline">
+      <div>
+        <h4>Are you looking for a Dormitory?</h4>
+        <p>Say no more! I'm here to help! Here at our Dormitory you will feel like at home! Have a look. </p>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+      <div class="container-fluid">
+         <div class="row">
+             
+                 <nav id="navbar" style="display: flex; flex-direction: column; align-items: center; justify-content: center; ">
+                     <h3  style="font-family:Serif;" > <b>Welcome Students and Parents in our Dormitory Page</b></h3>
+                   
+                     <ul class="nav nav-pills nav-stacked" style="display: flex; flex-direction: row; align-items: center; justify-content: center; flex-grow: 1; ">
+               
+               
+                         <a class="nav-link" href="#ABOUT_US" rel="internal">
+                             <li style="font-family: arial black; background-color:#EE8B43; color: black">ABOUT US</li>
+                         </a>
+                         <a class="nav-link" href="#GALLERY" rel="internal">
+                             <li style="font-family: arial black; background-color:#EE8B43; color: black">GALLERY</li>
+                         </a>
+                         <a class="nav-link" href="#BENEFITS" rel="internal">
+                             <li style="font-family: arial black; background-color:#EE8B43; color: black">BENEFITS</li>
+                         </a>
+                 <a class="nav-link" href="#PHILOSOPHY" rel="internal">
+                             <li style="font-family: arial black; background-color:#EE8B43; color: black">PHILOSOPHY</li>
+                         </a>
+                 <a class="nav-link" href="#VISION" rel="internal">
+                             <li style="font-family: arial black; background-color:#EE8B43; color: black">VISION</li>
+                         </a>
+                 <a class="nav-link" href="#MISSION" rel="internal">
+                             <li style="font-family: arial black; background-color:#EE8B43; color: black">MISSION</li>
+                         </a>
+                         <a class="nav-link" href="#CONTACT_US" rel="internal">
+                             <li style="font-family: arial black; background-color:#EE8B43; color: black">CONTACT US</li>
+                         </a>
+                         
+                      </ul>
+                 </nav>
+             </div>
+             <div>
+                 <main id="main-doc">
+                     <section class="main-section" id="ABOUT_US" >
+                      
+                         <h3 style = "font-family: arial black; background: #EE8B43; color: black" > <center>ABOUT US:</center></h3>
+                         <article id="border" style="background-color:#aaa; font-family:Serif;">
+                 
+                 <h2><b>WHAT YOU SHOULD KNOW ABOUT US</b></h2>
+      
+                         <h3><b>Our Big Goal</b> </h3>
+                 <p>The big goal of University Housing is provide a robust living experience through accessible and affordable state-of-the-art housing, dining, social, and academic programs for the entire student body to develop community leaders, innovators and change-makers who will enrich the future. </p>
+                 
+                 <p>Our Core Purpose: To support student success by cultivating inclusive communities. </p>
+                             </article>
+                     </section>
+                     <section class="main-section" id="GALLERY">
+                         <h3 style = "font-family: arial black; background: #EE8B43; color: black"> <center>BUILDINGS: </center></h3>
+                         <article id="border6">
+      
+      <body>
+      
+      <div class="slideshow-container">
+      
+      <div class="mySlides fade">
+        <img src="images/outside.jpg" style="width:100%">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/people.jpg" style="width:100%">
+        
+      </div>
+      
+      <div class="mySlides fade">
+        <img src="images/ready.jpg" style="width:100%">
+        
+      </div>
+      
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+      
+      </div>
+      <br>
+      
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+      </div>
+      
+      <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+      
+        </script>
+      </body>
+                
+              
+                           </article>
+                     </section>
+                     <section class="main-section" id="BENEFITS">
+                         <h3 style = "font-family: arial black; background: #EE8B43; color: black"><center>BENEFITS:</center></h3>
+                
+                         <article id="border" style="background-color:#aaa; font-family:Serif;">
+         
+                 <h2>4 REASONS TO LIVE IN A DORM</h2>
+                 <p> Living on campus adds value to the UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA student experience. Students who live on campus are more likely to graduate, have higher grades, and graduate at a faster rate. </p> 
+                             <p>Dorm living is a staple in college — living with roommates, meeting new people, and learning to live on your own. It teaches students responsibilities and allows them to flourish and grow, all in a location just steps from campus. No matter if you’re a freshman just arriving in UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA or an upperclassman looking for off campus housing with a great location, dorms have everything you need to succeed in and out of the classroom. Consider these four benefits of living in a dorm from the property management professionals at Contemporary Management Concepts, and contact us today to learn more about our wide variety of UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA student housing options!. </p>
+                   
+                   &nbsp;
+                   <li><b>Convenient Location</b> </li>
+                   &nbsp;
+                      <p>One of the best advantages of dorm living is a prime location. Luxury dorms are located just steps from campus, making it easy for students to walk to class, grab a bite to eat or cram in a last-minute study session at the library. Because dorms are so close to campus, there’s no need to drive — save that gas money and spend it on what you love. When living in a dorm near campus, residents can walk back to their rooms between classes for some much-needed relaxation time or a quick nap. </p>
+                    &nbsp;
+                    <li><b>Meet New Friends</b> </li>
+                  &nbsp;
+                   <p>Living in a dorm, residents meet other students from all walks of life, enriching their college experience. Unless you live in a single, you’re probably sharing a room with one or two other people. Sharing a space with others allows residents to learn from each other and grow, all while building a solid circle of friends and acquaintances. Some dorms even place together students with similar majors to better foster a sense of community. </p>
+                   &nbsp;
+                   <li><b>Positive Transition To Adulthood</b> </li>
+                   &nbsp;
+                       <p>College is the time to branch out and be independent, but independence doesn’t come without its challenges. That’s why dorms are the ideal way to begin that journey into adulthood. Students get their first taste of independence while still having a supportive network of resident assistants (RAs), counselors, and other friendly staff to help them with this transition. Even better, dorms in Gainesville, FL, come with necessary bills included in monthly installment payments, so students can stay focused — just another benefit of luxury dorm living. </p>
+                     &nbsp;
+                    <li><b>Student-Focused </b></li>
+                    &nbsp;
+                 <p>Students attend college to learn and grow academically, and dorms are specifically designed to foster this academic achievement. Dorm rooms are equipped with features students need to succeed, and community amenities are tailored to students including quiet study rooms and fast Internet speeds. Form study groups with roommates and other students and stay focused on why you here in the first place. You will find a strong sense of community and academics in a dorm environment. </p>
+      
+                            
+                         </article>
+                     </section>
+               
+               <section class="main-section" id="PHILOSOPHY">
+                         <h3 style = "font-family: arial black; background: #EE8B43; color: black"><center>PHILOSOPHY</center></h3>
+                         <article id="border" style="background-color:#aaa; font-family:Serif;">
+                 
+      
+                           <p> The University of Perpetual Help System DALTA believes and invokes Divine Guidance in the betterment of the quality of life through national development and transformation, which are predicated upon the quality of education of its people. Towards this end, the Institution is committed to the ideals of teaching, community service and research as it nurtures the value of “Helpers of God”, with “Character Building is Nation Building” as its guiding principle.</p>
+                         </article>
+                     </section>
+               
+               <section class="main-section" id="VISION">
+                         <h3 style = "font-family: arial black; background: #EE8B43; color: black"><center>VISION</center></h3>
+                         <article id="border" style="background-color:#aaa; font-family:Serif;">
+                 
+      
+                           <p>The University of Perpetual Help System DALTA shall emerge as a premier university in the Philippines. It shall provide a venue for the pursuit of excellence in academics, technology and research through local and international linkages. </p>
+                 
+                 <p>The University shall take the role of a catalyst for human development. It shall inculcate Christian values and Catholic doctrine, as a way of strengthening the moral fiber of the Filipino, a people who are “Helpers of God”, proud of their race and prepared for the exemplary global participation in the sciences, arts, humanities, sports and business. </p>
+                 
+                 <p>It foresees the Filipino people enjoying a quality of life in abundance, living in peace and building a nation that the next generation will nourish, cherish and value. </p>
+                         </article>
+                     </section>
+               
+               <section class="main-section" id="MISSION">
+                         <h3 style = "font-family: arial black; background: #EE8B43; color: black"><center>MISSION</center></h3>
+                         <article id="border" style="background-color:#aaa; font-family:Serif;">
+                 
+                           <p>The UNIVERSITY OF PERPETUAL HELP SYSTEM DALTA is dedicated to the development of the Filipino as a leader. It aims to graduate dynamic students who are physically, intellectually, socially and spiritually committed to the achievement of the highest quality of life.</p>
+                  <p>As a system of Service in health and in education, it is dedicated to the formation of Christ-centered, service-oriented and research-driven individuals with great social concern and commitment to the delivery of quality education and health care. </p>
+                   <p>It shall produce Perpetualites as “Helpers of God” – a vital ingredient to nation building. </p>
+                         </article>
+                     </section>
+               
+                     <section class="main-section" id="CONTACT_US">
+                         <h3 style = "font-family: arial black; background: #EE8B43; color: black"><center>CONTACT US</center></h3>
+                         <article id="border" style="background-color:#aaa; font-family:Serif;">
+         
+                           <h2>Las Piñas Campus</h2>
+                 <p><b>Phone:</b>   (02) 8872-7041</p>
+                 <p><b>Email: </b>   marketing.laspinas@perpetualdalta.edu.ph </p>
+                         </article>
+                     </section>
+                     
+              
+                 </main>
+             </div>
+         </div>
+      </div>
+  <div id="footer">
+    <div>
+      <div id="connect"> <a href="#"><img src="images/dlogo.png" style="width:300px;height:70px;position:absolute;bottom:-40px;left:-100px;" /></a>  </div>
+      <div class="section">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="homepage/room.html">Rooms</a></li>
+          <li><a href="homepage/booking.php">Book Now!</a></li>
+          <li><a href="homepage/floor.html">Floor Plan</a></li>
+          <li><a href="student/index.php">Floor Plan</a></li>
+          <li><a href="admin/dtr_panel/index.php">Admin</a></li>
+        </ul>
+        <p>Copyright &copy; <a href="#">Perpetual</a> - All Rights Reserved | Created By <a target="_blank" href="#!">Group of Dela Vega</a></p>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
