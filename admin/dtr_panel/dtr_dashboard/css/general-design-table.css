@@ -1,0 +1,28 @@
+.tableWrapper {
+    margin-inline: 5rem;
+}
+
+.btn {
+    padding: 0.8rem;
+    border-radius: 0.2rem;
+    border: none;
+    margin-inline: 0.2rem;
+    width: 4rem;
+    color: #fff;
+}
+
+.btn-primary {
+    background-color: #0d6efd;
+}
+
+.btn-warning {
+    background-color: #47768F;
+}
+
+.btn-success {
+    background-color: #198754;
+}
+
+.btn-view{
+    background-color: #47768F;
+}

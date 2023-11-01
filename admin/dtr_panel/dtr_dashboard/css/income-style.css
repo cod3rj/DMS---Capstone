@@ -1,0 +1,103 @@
+:root
+{
+    --blue: #47768F;
+    --white: #fff;
+    --grey: #f5f5f5;
+    --black1: #222;
+    --black2: #999;
+}
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    background: var(--white);
+}
+.chart
+{
+    width: 1150px;
+    height: 400px;
+    display: block;
+}
+.numbers
+{
+    color: var(--black1);
+    margin: 0;
+    padding: 0;
+    width: -5px;
+    height: 5px;
+    display: inline-block;
+}
+.numbers li
+{
+    list-style: none;
+    height: 29px;
+    position: relative;
+    bottom: 150px;
+}
+.numbers span
+{
+    font-size: 12px;
+    font-weight: 600;
+    position: absolute;
+    top: 150px;
+    right: 15px;
+}
+.bars
+{
+    color: var(--black1);
+    font-size: 12px;
+    font-weight: 600;
+    background: var(--black2);
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    width: 1150px;
+    height: 300px;
+    box-shadow: 0 0 10px 0 #555;
+    border-radius: 5px;
+}
+.bars li
+{
+    display: table-cell;
+    width: 100px;
+    height: 300px;
+    position: relative;
+}
+.bars span
+{
+    width: 100%;
+    position: absolute;
+    bottom: -30px;
+    text-align: center;
+}
+.bars .bar
+{
+    display: block;
+    background: var(--blue);
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    margin-left: 25px;
+    text-align: center;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+    transition: 0.5s;
+    transition-property: background, box-shadow;
+}
+.bars .bar:hover
+{
+    background: var(--black1);
+    box-shadow: 0 0 10px 0 rgba(85, 239, 196, 0.5);
+    cursor: pointer;
+}
+.bars .bar::before
+{
+    color: var(--white);
+    content:attr(data-percentage) '%';
+    position: relative;
+    bottom: 20px;
+}
